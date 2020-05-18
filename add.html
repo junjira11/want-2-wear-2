@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="add.css">
+        
+       
+    
+    
+    </head>
+    <body>
+
+<div class ="container" style="width: 25%; margin: 25px auto;">
+    <h2 style="text-align: center;">ADD NEW PRODUCT  </h2>
+    <form action="/new" method="POST">
+        <div class="form-group">
+            <label for="edskyname">PRODUCT NAME:</label>
+            <input type="text" class="form-control" name="name" placeholder="Product Name" required>      
+        </div>
+
+        <br>
+        <tr>   
+            <td class="Type"></class>TYPE:</td>
+            <td required ><select name="color" required>
+                <option value="SWIMWEAR">SWIMWEAR</option>
+                <option value="JACKETS">JACKETS</option>
+                <option value="SHIRTS">SHIRTS</option>
+                <option value="PANTS">PANTS</option>
+                <option value="SKIRTS">SKIRTS</option>
+                <option value="SHOES">SHOES</option>
+                <option value="BAGS">BAGS</option>
+                <option value="JEWELRY">JEWELRY</option>
+                </select>
+            </td>       
+        </tr>
+        <br>
+
+        <br>
+        <tr>   
+            <td class="size"></class>SIZE  :</td>
+            <td required ><select name="size" required>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+                </select>
+            </td>       
+        </tr>
+        <br>
+        <br>
+        <tr>   
+            <td class="color"></class>COLOR  :</td>
+            <td required ><select name="color" required>
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+                <option value="Gray">Gray</option>
+                <option value="White">White</option>
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+                </select>
+            </td>       
+        </tr>
+        <br>
+        <br>
+        <label>PRICE:</label>
+        <input type="text" value="" placeholder="Price" required>
+
+        <div class="form-group">
+            <br>
+            <label for="edskyURL">IMAGE URL:</label>
+            <input type="text" class="form-control" name="image" placeholder="URL of image" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="edskyDesc">DESCIPTION:</label>
+             <input type="text" class="form-control" name="desc" placeholder="Desciption">
+        </div>
+   
+   
+        
+        <br>
+
+        <label>QUANTITY:</label>
+        <input type="text" value="1"required>
+        <br>
+        <br>
+         <button type="submit" class="btn btn-outline-primary" style="float: right;">Submit</button>
+  
+  </form>
+</div>
+
+
+</body>
+        
+</html>
