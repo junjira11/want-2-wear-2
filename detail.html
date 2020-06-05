@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+        <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
     
     
     </head>
@@ -91,23 +91,33 @@
     <!--details&reviews-->
 <div class="col-md-12">
 <div class="details&reviews">
+
     <button class="tablink" onclick="openPage('Details', this, '#b69b7d')"id="defaultOpen">Details</button>
     <button class="tablink" onclick="openPage('Reviews', this, '#b69b7d')" >Reviews</button>
 
 
     <div id="Details" class="tabcontent">
-        
+        <form action="">
+            <textarea name="editor"></textarea>
+        </form>
+
         <center>
         
-            <img src="https://cf.shopee.co.th/file/567584a3b0502b90e39f3b9c1e29c910">
-        </center>
-        </div>
+            <!-- <img src="https://cf.shopee.co.th/file/567584a3b0502b90e39f3b9c1e29c910">
+        </center> -->
+
+    </div>
+        
 
     <div id="Reviews" class="tabcontent">
-        <div class="form-group">
-            <label for="comment">Comment:</label>
-            <textarea class="form-control" rows="3" id="comment" name="text"></textarea>
-        </div>
+        
+        <form action="">
+            <textarea name="comment"></textarea>
+
+
+
+        </form>
+        
         <button type="submit" class="btn btn-primary">Submit</button>
             
           
@@ -118,6 +128,13 @@
 
 </div>
 </div>
+
+
+
+
+
+
+
 <script>
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
@@ -135,6 +152,15 @@ function openPage(pageName,elmnt,color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('editor');
+    CKEDITOR.replace('comment');
+    
+
+
 </script>
 
       

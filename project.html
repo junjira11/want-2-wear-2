@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
 
@@ -23,6 +24,11 @@
     <div class="fixed-top">
       <!--header-->
         <div class="header">
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
           <a href="project.html" class="logo">-Want2Wear-</a>
           <div class="header-right">
             <a class="active" href="login.html"><i class="fa fa-fw fa-user"></i>Log in & Register</a>
@@ -31,7 +37,7 @@
         </div>
 
       <!--navbar-->  
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
       
           <a class="active" href="project.html"><i class="fa fa-home"></i>HOME</a> 
           
@@ -53,10 +59,9 @@
           
           <b href="#icon"> 
            
-            <a href="cart.html" style="padding: 0px 5px;  float: right;"><i class="fa fa-shopping-cart" aria-hidden="true" ></i></a>
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search..">
             
+            <a href="cart.html" style="padding: 0px 5px;  float: right;"><i class="fa fa-shopping-cart" aria-hidden="true" ></i></a>
+           
             
           </b>
         </div>
@@ -175,6 +180,16 @@
  
 		</footer>
       
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
       </body>
         
 </html>
